@@ -70,7 +70,8 @@ const SignUp = () => {
 
   return (
     <AuthLayout>
-      <div className='lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center'>
+      <div className= 'lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center'
+      >
         <h3 className='text-xl font-semibold text-black'>
           Create an account
         </h3>
@@ -81,7 +82,7 @@ const SignUp = () => {
 
 
 
-         <div className='grid grid-cols-1 sm:grid-cols-1  md:grid-cols-2 gap-4 w-full'>
+         <div className= 'flex flex-col gap-4 mt-4'>
           <Input
            value={fullName}
            onChange={(e) => setFullName(e.target.value)}
