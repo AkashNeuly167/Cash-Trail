@@ -8,7 +8,7 @@ import  ProfilePhotoSelector  from '../../components/Inputs/profilePhotoSelector
 import axiosInstance from '../../utils/axiosInstance';
 import { API_PATH } from '../../utils/apiPath';
 import uploadImage from '../../utils/uploadImage';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '../../context/UserContext';
 
 const SignUp = () => {
   const [profilePic, setProfilePic] = useState(null);

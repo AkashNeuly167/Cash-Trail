@@ -8,7 +8,7 @@ import InfoCard from '../../components/cards/InfoCard';
 import { LuHandCoins, LuWalletMinimal } from 'react-icons/lu';
 import { IoMdCard } from 'react-icons/io';
 import  {addThousandsSeparator}  from '../../utils/helper';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '../../context/UserContext';
 import RecentTransactions from '../../components/Dashboard/RecentTransactions';
 import FinanceOverview from '../../components/Dashboard/FinanceOverview';
 import ExpenseTransactions from '../../components/Dashboard/ExpenseTransactions';

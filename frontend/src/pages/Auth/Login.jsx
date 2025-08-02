@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AuthLayout from '../../components/layouts/AuthLayout'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -6,14 +6,14 @@ import Input from '../../components/Inputs/Input';
 import { validateEmail } from '../../utils/helper';
 import axiosInstance from '../../utils/axiosInstance';
 import { API_PATH } from '../../utils/apiPath';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '../../context/UserContext';
 
 const Login = () => {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
   const [error, setError] = useState();
 
-  const {updateUser} = React.useContext(UserContext);
+  const {updateUser} = useContext(UserContext);
   
   const navigate = useNavigate();
 
