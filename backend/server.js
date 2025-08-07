@@ -45,5 +45,9 @@ app.use('/api/v1/dashboard',dashboardRoutes);
 //server upload folder
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
+app.get('/ping', (req, res) => {
+  res.status(200).send('pong');
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
